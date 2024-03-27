@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    line-height: 20px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(210, 46%, 95%);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    max-width: 600px;
+    height: 240px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;    
+}
+
+.image{
+    display: flex;
+}
+
+.image img{
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.article > *{
+    margin-bottom: 10px;
+}
+
+.article .header{
+    font-size: 19px;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+
+.article .main-text{
+    font-weight: 500;
+    color: hsl(214, 17%, 51%);
+}
+
+.creator{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 0px;
+}
+
+.creator-name{
+    display: flex;
+    align-items: center;
+}
+
+.creator-name .text .name{
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);    
+}
+
+.creator-name .text .date{
+    font-weight: 500;
+    color: hsl(214, 17%, 51%);
+}
+
+.creator .image-creator{
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 35px;
+}
+
+.share-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: aqua;
+}
+
+.share-button img{
+    width: 15px;
+}
+
+.share-button:hover{
+    background-color: hsl(214,17%,51%);
+}
+
+.share-button:hover svg path{
+    fill: white; 
+}
+
+@media screen and (max-width: 543px) {
+    .container{
+        /* background-color: black; */
+        display: flex;
+        width: 85%;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        height: 500px;
+    }
+
+    .image{
+        display: flex;
+        width: 100%;
+        height: 250px;
+    }
+
+    .image img{
+        border-radius: 10px 10px 0px 0px;
+    }
+
+
+  }
+  
